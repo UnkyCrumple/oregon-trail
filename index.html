@@ -18,7 +18,10 @@
 <p>Click the game window to start. Press F11 inside the player for full screen.</p>
 <script src="js-dos.js"></script>
 <script>
-  Dos(document.getElementById("dos"), { url: "oregon.jsdos" });
+  Dos(document.getElementById("dos"), {
+    url: "oregon.jsdos",
+    noCursor: false   // system cursor ON
+  });
 </script>
 </body>
 </html>
