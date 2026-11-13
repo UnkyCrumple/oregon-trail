@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Oregon Trail Deluxe</title>
+<link rel="stylesheet" href="js-dos.css">
+<style>
+  body { margin:0; background:#1b1b1b; color:#eee; font-family:system-ui,sans-serif; text-align:center; }
+  h1 { font-size:1.2rem; margin:12px 0 8px; }
+  #dos { width:min(92vw, 800px); height:min(69vw, 600px); margin:0 auto; }
+  p { font-size:.85rem; opacity:.7; }
+</style>
+</head>
+<body>
+<h1>The Oregon Trail Deluxe</h1>
+<div id="dos"></div>
+<p>Click the game window to start. Press F11 inside the player for full screen.</p>
+<script src="js-dos.js"></script>
+<script>
+  Dos(document.getElementById("dos"), { url: "oregon.jsdos" });
+</script>
+</body>
+</html>
